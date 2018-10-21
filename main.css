@@ -143,10 +143,6 @@ header h2 {
     }
 }
 
-#scroll-btn {
-    padding-top: 50px;
-}
-
 #scroll-btn a {
     opacity: 1;
     -webkit-transition: opacity 0.2s;
