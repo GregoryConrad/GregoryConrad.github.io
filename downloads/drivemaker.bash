@@ -15,7 +15,7 @@ IMGFILE="file.img.dmg"
 DIR="/tmp/etcg_drivemaker"
 DISK="/dev/"
 UBUNTU_VERSION="16.04.5"
-DEBIAN_VERSION="9.6.0"
+DEBIAN_VERSION="9.8.0"
 
 #Functions:
 function downloadFile {
