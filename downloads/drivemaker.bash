@@ -55,7 +55,7 @@ if [ "$userOption" == "A" ]; then
 	fi
 elif [ "$userOption" == "B" ]; then
 	echo "Downloading Debian..."
-	if ! downloadFile "https://gemmei.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-"$DEBIAN_VERSION"-amd64-netinst.iso"
+	if ! downloadFile "https://ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-"$DEBIAN_VERSION"-amd64-netinst.iso"
 	then
 		exit 1
 	fi
