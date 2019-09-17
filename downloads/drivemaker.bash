@@ -15,7 +15,7 @@ IMGFILE="file.img.dmg"
 DIR="/tmp/etcg_drivemaker"
 DISK="/dev/"
 UBUNTU_VERSION="16.04.6"
-DEBIAN_VERSION="10.0.0"
+DEBIAN_VERSION="10.1.0"
 
 #Functions:
 function downloadFile {
@@ -81,7 +81,7 @@ if ! sudo hdiutil convert -format UDRW -o "$IMGFILE" "$ISOFILE"
 then
 	echo "Conversion Failed."
 	echo "This is probably due to an invalid ISO file."
-	echo "If you used option A or B, please email me at contact@etcg.pw so I can resolve the issue."
+	echo "If you used option A or B, please email me at contact@gsconrad.com so I can resolve the issue."
 	echo "Quiting..."
 	exit 2
 else echo "Conversion Successful."
