@@ -82,6 +82,7 @@ then
 	echo "Conversion Failed."
 	echo "This is probably due to an invalid ISO file."
 	echo "If you used option A or B, please email me at contact@gsconrad.com so I can resolve the issue."
+	echo "The issue is also probably due to an out of date Ubuntu/Debian version (or mirror link) used in this script, which you can feel free to modify if you don't feel like waiting for me to."
 	echo "Quiting..."
 	exit 2
 else echo "Conversion Successful."
