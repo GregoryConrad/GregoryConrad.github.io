@@ -55,7 +55,7 @@ if [ "$userOption" == "A" ]; then
 	fi
 elif [ "$userOption" == "B" ]; then
 	echo "Downloading Debian..."
-	if ! downloadFile "https://gemmei.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-"$DEBIAN_VERSION"-amd64-netinst.iso"
+	if ! downloadFile "https://ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-"$DEBIAN_VERSION"-amd64-netinst.iso"
 	then
 		exit 1
 	fi
@@ -83,6 +83,7 @@ then
 	echo "This is probably due to an invalid ISO file."
 	echo "If you used option A or B, please email me at contact@gsconrad.com so I can resolve the issue."
 	echo "The issue is also probably due to an out of date Ubuntu/Debian version (or mirror link) used in this script, which you can feel free to modify if you don't feel like waiting for me to."
+	echo "User option was $userOption"
 	echo "Quiting..."
 	exit 2
 else echo "Conversion Successful."
