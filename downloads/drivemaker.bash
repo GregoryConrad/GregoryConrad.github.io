@@ -16,6 +16,7 @@ DIR="/tmp/etcg_drivemaker"
 DISK="/dev/"
 UBUNTU_VERSION="16.04.6"
 DEBIAN_VERSION="10.2.0"
+DEBIAN_MIRROR="https://caesar.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd"
 
 #Functions:
 function downloadFile {
@@ -55,7 +56,7 @@ if [ "$userOption" == "A" ]; then
 	fi
 elif [ "$userOption" == "B" ]; then
 	echo "Downloading Debian..."
-	if ! downloadFile "https://ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-"$DEBIAN_VERSION"-amd64-netinst.iso"
+	if ! downloadFile $DEBIAN_MIRROR"/debian-"$DEBIAN_VERSION"-amd64-netinst.iso"
 	then
 		exit 1
 	fi
