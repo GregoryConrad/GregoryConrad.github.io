@@ -15,7 +15,7 @@ IMGFILE="file.img.dmg"
 DIR="/tmp/etcg_drivemaker"
 DISK="/dev/"
 UBUNTU_VERSION="16.04.6"
-DEBIAN_VERSION="10.4.0"
+DEBIAN_VERSION="10.5.0"
 DEBIAN_MIRROR="https://caesar.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd"
 
 #Functions:
