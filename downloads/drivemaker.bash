@@ -20,7 +20,7 @@ DEBIAN_MIRROR="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd"
 
 #Functions:
 function downloadFile {
-	sudo curl "$1" --output "$ISOFILE"
+	sudo curl -L "$1" --output "$ISOFILE"
 	if [ $? -eq 0 ]
 	then
 		echo "Download Successful."
